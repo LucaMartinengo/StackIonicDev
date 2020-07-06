@@ -1,0 +1,163 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+//Header styling
+ion-header {
+    ion-toolbar {
+        --ion-background-color: #2F3136;
+        --ion-text-color: white;
+    }
+    ion-title {
+        font-family: 'Georgia';
+        font-size: 22px;
+    }
+}    
+
+//Body styling
+ion-content {
+    --ion-text-color: black;
+    --background: url('assets/other_medias/texture/texture.jpg') repeat ;
+    font-size: 12px;
+    line-height: 16px;
+
+    .quote {
+        color:#2F3136;
+        font-style: italic;
+        padding-right: 2%;
+        text-align: right;
+        font-family: 'Georgia';
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .quote-end {
+        color:#2F3136;
+        font-size: 15px;
+        font-variant: small-caps;
+        font-family: 'Times New Roman';
+        padding-right: 2%;
+        text-align: right;
+        padding-bottom: 1%;
+        
+    }
+
+    .row-divider {
+        border-top: 1px solid #2F3136;
+    }    
+
+    .section-regular{
+        padding-left: 2%;
+        font-family: 'Georgia';
+        font-size: 16px;
+        line-height: 24px;        
+        letter-spacing: 1px
+    }
+
+    .img-regular-img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-intro{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-links{
+        max-width: 110px;
+        max-height: 110px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hide {
+        visibility: hidden;
+    }
+}
+
+//Menu styling
+ion-menu {
+    --ion-font-family: 'Georgia';
+    --ion-font-size: 10px;
+    --ion-background-color: white;
+
+    ion-content {
+        @media (prefers-color-scheme: dark) {
+            --ion-text-color: white;
+        }
+    }
+
+    ion-item {
+        ion-label{
+            margin: auto;
+            height: 18px;
+        }
+    }
+    .active-item {
+        --ion-background-color: #1b1b1b;
+        --ion-text-color: white;
+        
+        @media (prefers-color-scheme: dark) {
+            --ion-text-color: #25ddf5;
+        }
+    } 
+}
+
+//Tab bar styling
+ion-tab-bar {
+    --background: #2F3136;
+    font-family: 'verdana'; 
+
+    ion-tab-button {
+        --color-selected: #fff;
+        --color: #a8a8a8;
+    }  
+}
+
+//Tab bar icons
+ion-icon {
+    &[class*="mda-"] {
+        background-size: contain;
+        width: 1em;
+        height: 1em;
+        background-repeat: no-repeat;
+    }    
+    // custom icons
+    &[class*="mda-tab1"] {
+        background-image: url(assets/icon/introduzione.svg);
+    }
+    &[class*="mda-tab2"] {
+        background-image: url(assets/icon/mda_icon.svg);
+    }
+    &[class*="mda-tab3"] {
+        background-image: url(assets/icon/altre_poesie.svg);
+    }
+}

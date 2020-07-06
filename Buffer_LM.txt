@@ -1,0 +1,70 @@
+IN CORSO:             
+    - DA RAGIONARE VERSIONE 1.5
+    
+Terminale, fondamentali:    
+    - cd C:\MDABook\Dev\MDAIonic
+    - ionic serve 
+    - ionic build 
+    - ionic cap add android 
+    - ionic cap open android 
+    - buildare con android
+    - localizzare l'APK
+    
+Terminale, generazioni varie:
+	- ionic g guard guards/tutorial
+	- ionic g service services/service
+	- ionic g page pages/tutorial_1
+
+Terminale, lista di NPM maggiormente utilizzati:
+	- 
+    - npm install @ionic/storage
+    - npm i @fortawesome/angular-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons
+    - npm i @capacitor/core (se fallisce compilazione Android)
+    - npm install hammerjs
+    - npm update (FONDAMENTALE QUANDO SU UN PROGETTO AGGIUNGIAMO PACKAGES O SFRUTTIAMO COSE NUOVE DI ALTRI PACKAGES)
+
+Varie:
+	- Files splashscreen contenuti in: C:\MDABook\MercantiDAnima\android\app\src\main\res\mipmap-hdpi
+
+Per rebuildare
+    - ionic build
+    - ionic cap copy
+    - ionic cap sync
+    - ionic cap open android
+
+Firebase
+    - firebase use (nomeprogetto) Per cambiare progetto
+    - firebase deploy (nomeprogetto) Per mandare i dati online
+
+V1.5:
+    - Controllare click su icone Chrome
+    - Gestire l'immagine di intro con il popup fatto bene
+    - Fare video da mettere in introduzione
+    - Correggi tecnico ordine menu/menu2/menu3
+    - Iniziare testing su devices multipli REALI prima di deploy Android
+    - Primo deploy Android
+        - https://www.joshmorony.com/deploying-capacitor-applications-to-android-development-distribution/
+        - Iniziare a definire icone varie e descrizioni per la pubblicazione Android
+        - Account sviluppatore google da spostare su mail it.luca.martinengo@gmail.com
+    - Modalità landscape immagini: condizionare lo stile in base alla platform, da inserire nel principale modulo.ts
+    - Trovare il modo per mettere il buffer immagini service worker
+    - Formattazione condizionale web/app
+    - Primo deploy iOS
+    - Miglioriamo splashscreen 
+    - Specificare che le immagini devono essere bufferizzate di default
+    - Tenere traccia dell'ultimo punto prima di chiudere l'app
+    - 
+
+V2:
+    - Chiedi su forum Ionic come facciamo a far fare il pinch to zoom sulle immagini
+    - iOS
+    - Switch su tema chiaro/scuro
+    - Metodo facilitato per richiesta delle informazioni
+    - Inserire note con apice/pedice per riflessioni e commenti dell'autore
+    - 
+
+V3:    
+    - Integrazione con Instagram
+    - Ricerca (con la lente) in tutti i testi delle pagine web
+    - Condivisione sui socials facilitata
+    - 

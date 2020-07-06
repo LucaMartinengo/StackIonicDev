@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="third"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Benvenuti!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="content3" (swipe)="swipeEvent($event)">
+  <p class="section-regular" padding>
+    Benvenuti nel nostro mondo artistico, finalmente divenuto digitale ;)
+  </p>
+  <p class="section-regular" padding>
+    Questo è il "contenitore" delle poesie di Luca Martinengo e dei disegni di Antonella Miccolis, il luogo dove
+    consultare le nostre opere, prima fra tutte la nostra unica pubblicazione editoriale, "Mercanti d'anima".
+  </p>
+  <p class="section-regular" padding>
+    Potete consultare le nostre opere tramite le sezioni in basso ed il menu in alto a destra,
+    oppure semplicemente sfogliarle, una pagina dopo l'altra.
+  </p>
+  <p class="section-regular" padding>
+    Nel caso la lettura sia di vostro gradimento, potete trasferire questa esperienza nella realtà, 
+    acquistando una copia fisica di "Mercanti d'anima" ^^
+  </p>
+  <p class="section-regular" padding>
+    Per qualsiasi informazione in merito, contattateci all'indirizzo <a
+      href="mailto:it.luca.martinengo@gmail.com">it.luca.martinengo@gmail.com</a>
+  </p>
+  <p class="section-regular" padding>
+    Questa applicazione è una prima "beta", ancora da migliorare notevolmente e per ora ottimizzata solo per Chrome... 
+    <br>Ma nel frattempo, vi lasciamo navigare nei flutti dell'arte, volare nel color dei disegni! Buona lettura!
+  </p>
+  <p class="section-regular" [class.hide]="img_hide === true" padding>
+    P.S. Non dimenticate di aggiungere questa applicazione al vostro dispositivo!
+  </p>
+  <img class='img-intro' [class.hide]="img_hide === true" [src]="linkimg" />
+  
+</ion-content>
