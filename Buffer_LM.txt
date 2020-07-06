@@ -1,5 +1,5 @@
 IN CORSO:   
-	- TEST STACKBLITZ
+	- TEST STACKBLITZ 
     - DA RAGIONARE VERSIONE 1.5
     
 Terminale, fondamentali:    
