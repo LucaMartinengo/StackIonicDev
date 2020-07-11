@@ -1,38 +1,19 @@
-import { Component, HostListener } from '@angular/core';
-import { Platform, NavController } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { BackButtonService } from '../services/back-button.service';
+import { Component } from '@angular/core';
+import { Platform } from 'ionic-angular';
+
+import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+  templateUrl: 'app.html'
 })
-export class AppComponent {
-  constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar,
-    private backButtonService: BackButtonService,
-    private navCtrl: NavController
-  ) {
-    this.initializeApp();
-  }
+export class MyApp {
+  rootPage:any = TabsPage;
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+  constructor(platform: Platform) {
+    platform.ready().then(() => {
+      // Okay, so the platform is ready and our plugins are available.
+      // Here you can do any higher level native things you might need.
+
     });
-  }
-
-  @HostListener('document:backbutton')
-  onBackButton() {
-    if (this.backButtonService.quitOnBackButton) {
-      this.backButtonService.closeApp();
-    } else {
-      this.navCtrl.back();
-    }
   }
 }
