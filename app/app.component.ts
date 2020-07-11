@@ -2,7 +2,7 @@ import { Component, HostListener } from '@angular/core';
 import { Platform, NavController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { BackButtonService } from './services/back-button.service';
+import { BackButtonService } from '../services/back-button.service';
 
 @Component({
   selector: 'app-root',

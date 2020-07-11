@@ -8,19 +8,19 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   { path: 'app', 
-    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule) 
+    loadChildren: () => import('../pages/tabs/tabs.module').then( m => m.TabsPageModule) 
   },
   { path: 'tabs', 
-    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule) 
+    loadChildren: () => import('../pages/tabs/tabs.module').then( m => m.TabsPageModule) 
   },
   { path: 'menu', 
-    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule) 
+    loadChildren: () => import('../pages/menu/menu.module').then( m => m.MenuPageModule) 
   },
   { path: 'menu2',
-    loadChildren: () => import('./pages/menu2/menu2.module').then( m => m.Menu2PageModule)
+    loadChildren: () => import('../pages/menu2/menu2.module').then( m => m.Menu2PageModule)
   },
   { path: 'menu3', 
-    loadChildren: () => import('./pages/menu3/menu3.module').then( m => m.Menu3PageModule) 
+    loadChildren: () => import('../pages/menu3/menu3.module').then( m => m.Menu3PageModule) 
   }
 ];
 
